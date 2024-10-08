@@ -13,7 +13,7 @@
 		<legend>Conferece Application</legend>
 		<p>
 			<label for="name"> Your Name </label>
-			<input id="name" type="text" value="" placeholder="Homer Simpson" minlength="1" maxlength="40"/>
+			<input id="name" type="text" value="" placeholder="Homer Simpson" required minlength="1" maxlength="40"/>
 		</p>
 		<p>
 			<label for="age"> Your age </label>
@@ -27,30 +27,34 @@
 			<label for="address"> Type your address </label>
 			<input id="address" type="text" value="" placeholder="Webbgatan 7, Gotheburg" required minlength="5" maxlength="99"/>
 		</p>
+		<p>
+			<label for="occupation/education">Your occupation/education</label>
+			<input id="occupation/education" type="text" placeholder="NBI/Handelsakadin FED24GB" required minlength="2" max="99"></input>
+		</p>
 		<div>
 			<p>For how long do you plan to attend the Conference?</p>
 
 			<label for="friday"> Friday </label>
-			<input id="friday" type="checkbox" checked/>
+			<input class="check" id="friday" type="checkbox" checked/>
 		
 			<label for="saturday"> Saturday </label>
-			<input id="saturday" type="checkbox" />
+			<input class="check" id="saturday" type="checkbox"/>
 		
 			<label for="day" >Sunday </label>
-			<input id="sunday" type="checkbox"/>
+			<input class="check" id="sunday" type="checkbox"/>
 		</div>
 		<p> Choose your meal type
 			<label>
-				<input type="radio" name="meal"> Meat
+				<input class="check" type="radio" name="meal"> Meat
 			</label>
 			<label>
-				<input type="radio" name="meal"> Fish
+				<input class="check" type="radio" name="meal"> Fish
 			</label>
 			<label>
-				<input type="radio" name="meal"> Vegetarian
+				<input class="check" type="radio" name="meal"> Vegetarian
 			</label>
 			<label>
-				<input type="radio" name="meal"> Vegan
+				<input class="check" type="radio" name="meal"> Vegan
 			</label>
 		</p>
 		<p>
