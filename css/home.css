@@ -17,7 +17,6 @@ div {
 	background-repeat: no-repeat;
 	justify-content: center;
 	flex-wrap: wrap;
-	border-radius: 7em;
 
 }
 
@@ -25,7 +24,7 @@ div {
 	padding: 2rem;
 	font-weight: 700;
 	font-size: 3em;
-    color:#FFD700;
+    color: var(--home-color);
     text-shadow: 5px 3px 0 #333;
 	text-align: center;
 	/* position: relative; */
@@ -37,7 +36,7 @@ div {
 	padding: 2rem;
 	font-weight: 700;
 	font-size: 3em;
-    color:#FFD700;
+    color: var(--home-color);
     text-shadow: 5px 3px 0 #333;
 	text-align: center;
 	/* position: relative; */
