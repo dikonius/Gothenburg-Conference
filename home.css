@@ -1,0 +1,47 @@
+* {box-sizing: border-box; padding: 0; margin: 0; 
+}
+
+body {
+	background-color: rgb(18, 17, 17);
+}
+
+.home-container {
+	display: flex;
+	background-image: url(/Images/Home.jpg);
+	background-size: cover;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	background-repeat: no-repeat;
+	justify-content: center;
+	flex-wrap: wrap;
+	box-shadow: var(--headerHomeBgBoxShadow-box-shadow);
+
+}
+
+.home {
+	padding: 2rem;
+	font-weight: 700;
+	font-size: var(--home-font-size);
+    color: var(--home-color);
+    text-shadow: 5px 3px 0 #333;
+	text-align: center;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.home-dates {
+	display: flex;
+	padding: 2rem;
+	font-weight: 700;
+	font-size: var(--home-font-size);
+    color: var(--home-color);
+    text-shadow: 5px 3px 0 #333;
+	text-align: center;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.history {
+	margin: 1em;
+	color: #faf9f4;
+	font-size: 150%;
+	font-family: "Crimson Text";
+}
