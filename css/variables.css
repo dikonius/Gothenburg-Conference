@@ -1,4 +1,7 @@
 :root {
 	--home-color: #FFD700;
 	--header-box-shadow: 0.1em 0.1em 0.1em 0.1em #112639;
+	--home-font-size: 250%;
+	--header-bg-color: #84a3ff;
+	--headerHomeBgBoxShadow-box-shadow: inset 0 0 0.6em 0.4em var(--header-bg-color);
 }

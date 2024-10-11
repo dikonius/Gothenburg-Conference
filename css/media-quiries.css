@@ -1,0 +1,29 @@
+
+@media (min-width: 631px) {
+	footer {
+		display: flex;
+		height: 8.5em;
+		flex-direction: column;
+	}
+
+	.logos-container {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 644px) {
+	header {
+		flex-direction: row;
+		height: 5em;
+		justify-content: space-around;
+	}
+	
+	nav {
+		width: 9em;
+		justify-content: center;
+	}
+
+	.home, .home-dates {
+		font-size: 300;
+	}
+}
