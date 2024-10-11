@@ -1,0 +1,24 @@
+* {box-sizing: border-box; padding: 0; margin: 0;
+}
+
+.day {
+	display: flex;
+}
+
+.seminar {
+	display: flex;
+	flex-direction: column;
+	width: 324px;
+	align-items: center;
+	border: var(--borderColorSeminar-border);
+	margin: 1em;
+	border-radius: 1em;
+	text-align: center;
+	box-shadow: var(--header-box-shadow);
+}
+
+.seminar-img {
+	height: 320px;
+	width: 320px;
+	border-radius: 1em;
+}
