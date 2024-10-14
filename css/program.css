@@ -3,6 +3,8 @@
 
 .day {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .seminar {
@@ -14,7 +16,11 @@
 	margin: 1em;
 	border-radius: 1em;
 	text-align: center;
-	box-shadow: var(--header-box-shadow);
+	box-shadow: 0 0 0.6em 0.4em #84a3ff;
+	background-color: white;
+	padding: 0.2em;
+	font-size: var(--mainArticles-font-size);
+
 }
 
 .seminar-img {
@@ -22,3 +28,21 @@
 	width: 320px;
 	border-radius: 1em;
 }
+
+ main {
+	background-color: rgb(18, 17, 17);
+	padding: 1em 0 1em 0;
+ }
+
+ h2 {
+	color: var(--home-color);
+	text-align: center;
+	font-size: var(--home-font-size);
+	
+ }
+
+ h1 {
+	color: white;
+	text-align: center;
+	font-size: var(--home-font-size);
+ }
