@@ -2,9 +2,19 @@
 
 body {
 	text-align: center;
-	background-color: rgb(18, 17, 17);
+	background-color: black;
 	color: white;
 	height: 100vh;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: var(--home-font-size);
+    color: var(--home-color);
+}
+
+main {
+	padding: 1em;
 }
 
 .sponsors {
@@ -14,20 +24,122 @@ body {
 	flex-wrap: wrap;
 }
 
-h1 {
-	color: var(--home-color);
-	text-align: center;
-	font-size: var(--home-font-size);
+h2 {
+	margin-top: 2em;
 }
 
 .reg-img {
-	height: 50;
-	width: 150;
-	/* box-shadow: 0 0 0.6em 0.4em #84a3ff; */
-	margin: 2em;
+	height: 10em;
+	width: 20em;
+	margin: 1em;
+	padding: 1em;
 	border-radius: 1em;
+	transition: all 1s;
+	
+}
+
+.reg-img:hover {
+	box-shadow: 0 0 0.6em 0.4em #84a3ff;
+	transform: scale(1.1);
 }
 
 form {
-	margin: 1em;;
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
+	input[type=text], [type=email]{
+		background-color: white;
+		width: 30em;
+		padding: 1em;
+		border-radius: 1em;
+		text-align: center;
+		border: 0.3em solid lightblue;
+		margin: 1em;
+		transition: all 0.2s;
+	}
+
+	text-align: left;
+	input[type=number] {
+		background-color: white;
+		width: 5em;
+		padding: 1em;
+		border-radius: 1em;
+		text-align: center;
+		border: 0.3em solid lightblue;
+		margin: 1em;
+		transition: all 0.2s;
+	}
+}
+
+textarea {
+	background-color: white;
+		width: 25em;
+		padding: 1em;
+		border-radius: 1em;
+		text-align: center;
+		border: 0.3em solid lightblue;
+		margin: 1em;
+		transition: all 0.2s;
+}
+
+input[type=text]:hover, [type=email]:hover, input[type=number]:hover, textarea:hover {
+	box-shadow: 0 0 0.6em 0.4em #84a3ff;
+}
+
+.allergies {
+	margin-top: 2em;
+}
+
+div > .parag-form {
+	
+}
+
+.radio {
+	display: inline-flex;
+	overflow: hidden;
+	border-radius: 1em;
+	box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+}
+
+.radio__input {
+	display: none;
+}
+
+.radio__label {
+	padding: 0.5em 1em;
+	font-weight: bold;
+	background-color: #84a3ff;
+	color: black;
+	cursor: pointer;
+	transition: all 0.1s;
+
+}
+
+.radio__label:first-of-type {
+	border-radius: 1em 0 0 1em;
+}
+
+.radio__label:last-of-type {
+	border-radius: 0 1em 1em 0;
+}
+
+.radio__label:not(:last-of-type) {
+	border-right: 2px solid black;
+
+}
+
+.radio__input:checked + .radio__label {
+	background-color: #FFD700;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+.container-radio {
+	display: flex;
+	height: 3em;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 1em;
 }

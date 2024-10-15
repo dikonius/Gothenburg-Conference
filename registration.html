@@ -20,39 +20,30 @@
 		<a class="navigation" href="registration.html"><nav>REGISTRATION</nav></a>
 	</header>
 	<main>
-		<h1> Registration </h1>
-		<h2> Thanks to our generous sponsors we are glad to announce that there is no admission fee for Bättre Web Conference but the only requirement is that you either must study Frontend Development or be employed as a Frontend Developer in 2024.  </h2>
-		<section class="sponsors">
-			<a class="sponsors-links" href="https://www.google.com" target="_blank"><img class="reg-img" src="/images/google-logo.jpg"></a>
-			<a class="sponsors-links" href="https://www.microsoft.com" target="_blank"><img class="reg-img" src="/images/microsoft-logo.jpeg"></a>
-			<a class="sponsors-links" href="https://www.openai.com" target="_blank"><img class="reg-img" src="/images/openAi-logo.jpg"></a>
-			<a class="sponsors-links" href="https://www.mozilla.org" target="_blank"><img class="reg-img" src="/images/Mozilla_logo.png"></a>
-		</section>
+		<h1>Conference Registration</h1>
 		<form action="#">
-			<fieldset>
-			<legend>Conferece Application</legend>
-			<p>
-				<label for="name"> Your Name </label>
-				<input id="name" type="text" value="" placeholder="Homer Simpson" required minlength="1" maxlength="40"/>
-			</p>
-			<p>
+			
+		
+				<label for="name"> First Name </label>
+				<input id="name" type="text" value="" placeholder="Homer" required minlength="1" maxlength="20"/>
+
+				<label for="name"> Last Name </label>
+				<input id="name" type="text" value="" placeholder="Simpson" required minlength="1" maxlength="20"/>
+		
 				<label for="age"> Your age </label>
 				<input id="age" type="number" value="" placeholder="35" required min="16" max="99"/>
-			</p>
-			<p>
+		
 				<label for="email"> Enter your email </label>
-				<input id="email" type="email" value="" placeholder="john.doe@icloud.com" required minlength="5" maxlength="99"/>
-			</p>
-			<p>
+				<input id="email" type="email" value="" placeholder="john.doe@gmail.com" required minlength="5" maxlength="99"/>
+			
 				<label for="address"> Type your address </label>
 				<input id="address" type="text" value="" placeholder="Webbgatan 7, Gotheburg" required minlength="5" maxlength="99"/>
-			</p>
-			<p>
-				<label for="occupation/education">Your occupation/education</label>
-				<input id="occupation/education" type="text" placeholder="NBI/Handelsakadin FED24GB" required minlength="2" max="99"></input>
-			</p>
-			<div>
-				<p>For how long do you plan to attend the Conference?</p>
+			
+				<label for="occupation/education">Your occupation / education</label>
+				<input id="occupation/education" type="text" placeholder="NBI/Handelsakademin FED24GB" required minlength="2" max="99"></input>
+
+			<p class="parag-form"> For how long do you plan to attend the Conference? </p>
+			<div class="container-checkbox">
 	
 				<label for="friday"> Friday </label>
 				<input class="check" id="friday" type="checkbox" checked/>
@@ -60,30 +51,39 @@
 				<label for="saturday"> Saturday </label>
 				<input class="check" id="saturday" type="checkbox"/>
 			
-				<label for="day" >Sunday </label>
+				<label for="day" > Sunday </label>
 				<input class="check" id="sunday" type="checkbox"/>
 			</div>
-			<p> Choose your meal type
-				<label>
-					<input class="check" type="radio" name="meal"> Meat
-				</label>
-				<label>
-					<input class="check" type="radio" name="meal"> Fish
-				</label>
-				<label>
-					<input class="check" type="radio" name="meal"> Vegetarian
-				</label>
-				<label>
-					<input class="check" type="radio" name="meal"> Vegan
-				</label>
-			</p>
-			<p>
-				<label for="allergies">Let us know if you have any allergies</label>
-				<input id="allergies" type="text">
-			</p>
-			<button type="submit"> Submit </button>
-			</fieldset>
+
+			<p class="parag-form"> Choose your meal type: </p>
+			<div class="container-radio">
+
+				<input class="radio__input" type="radio" value="meat" name="meal" id="meal-1">
+				<label class="radio__label" for="meal-1"> Meat </label>
+
+				<input class="radio__input" type="radio" value="meat" name="meal" id="meal-2">
+				<label class="radio__label" for="meal-2"> Fish </label>
+
+				<input class="radio__input" type="radio" value="meat" name="meal" id="meal-3">
+				<label class="radio__label" for="meal-3"> Vegetarian </label>
+
+				<input class="radio__input" type="radio" value="meat" name="meal" id="meal-4">
+				<label class="radio__label" for="meal-4"> Vegan </label>
+
+			</div>
+				<label class="allergies" for="allergies">Let us know if you have any allergies</label>
+				<textarea id="allergies"></textarea>
+		
+			<button type="submit"> Register now! </button>
 		</form>
+
+		<h2> Thanks to our generous sponsors we are glad to announce that there is no admission fee for Bättre Web Conference but the only requirement is that you either must study Frontend Development or be employed as a Frontend Developer in 2024.  </h2>
+		<section class="sponsors">
+			<a class="sponsors-links" href="https://www.google.com" target="_blank"> <img class="reg-img" src="/images/google-logo.jpg"> </a>
+			<a class="sponsors-links" href="https://www.microsoft.com" target="_blank"> <img class="reg-img" src="/images/microsoft-logo.jpeg"> </a>
+			<a class="sponsors-links" href="https://www.openai.com" target="_blank"> <img class="reg-img" src="/images/openAi-logo.jpg"> </a>
+			<a class="sponsors-links" href="https://www.mozilla.org" target="_blank"> <img class="reg-img" src="/images/Mozilla_logo.png"> </a>
+		</section>
 
 	</main>
 	<footer>
