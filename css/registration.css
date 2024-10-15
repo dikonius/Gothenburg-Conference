@@ -1,0 +1,33 @@
+* {box-sizing: border-box; padding: 0; margin: 0;}
+
+body {
+	text-align: center;
+	background-color: rgb(18, 17, 17);
+	color: white;
+	height: 100vh;
+}
+
+.sponsors {
+	display: flex;
+	padding-top: 1em;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+h1 {
+	color: var(--home-color);
+	text-align: center;
+	font-size: var(--home-font-size);
+}
+
+.reg-img {
+	height: 50;
+	width: 150;
+	/* box-shadow: 0 0 0.6em 0.4em #84a3ff; */
+	margin: 2em;
+	border-radius: 1em;
+}
+
+form {
+	margin: 1em;;
+}
