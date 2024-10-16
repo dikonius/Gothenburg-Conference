@@ -7,7 +7,7 @@ body {
 
 .home-container {
 	display: flex;
-	background-image: url(./Images/Home.jpg);
+	background-image: url(./images/Home.jpg);
 	background-size: cover;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
