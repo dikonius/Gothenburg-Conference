@@ -2,7 +2,6 @@
 
 footer {
 	display: flex;
-	width: 100vw;
 	height: 17em;
 	justify-content: center;
 	flex-direction: column;

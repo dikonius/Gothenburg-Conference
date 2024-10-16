@@ -90,9 +90,9 @@ input[type=text]:hover, [type=email]:hover, input[type=number]:hover, textarea:h
 	margin-top: 2em;
 }
 
-div > .parag-form {
+/* div > .parag-form {
 	
-}
+} */
 
 .radio {
 	display: inline-flex;
