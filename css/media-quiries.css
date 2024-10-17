@@ -27,3 +27,14 @@
 		font-size: 300%;
 	}
 }
+
+@media (min-width: 480px) {
+	.container-checkbox, .container-radio {
+		display: flex;
+		height: 5em;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 1em;
+		justify-content: center;
+	}
+}

@@ -7,7 +7,7 @@ body {
 
 .home-container {
 	display: flex;
-	background-image: url(/images/home.jpg);
+	background-image: url(/images/home-1.jpg);
 	background-size: cover;
 	padding-top: 10rem;
 	padding-bottom: 10rem;
@@ -18,19 +18,12 @@ body {
 
 }
 
-.home {
-	padding: 2rem;
-	font-weight: 700;
-	font-size: var(--home-font-size);
-    color: var(--home-color);
-    text-shadow: 5px 3px 0 #333;
-	text-align: center;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.home-dates {
+.home-dates, .home {
 	display: flex;
-	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.466);
+	border-radius: 1em;
+	padding: 0 1rem 0 1rem;
+	margin: 1em;
 	font-weight: 700;
 	font-size: var(--home-font-size);
     color: var(--home-color);
