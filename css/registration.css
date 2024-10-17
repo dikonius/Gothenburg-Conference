@@ -1,20 +1,25 @@
 * {box-sizing: border-box; padding: 0; margin: 0;}
 
 body {
+	background-image: url(/images/gothia_night.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	text-align: center;
 	background-color: black;
 	color: white;
 	height: 100vh;
 }
 
+main {
+	margin-top: 2em;
+	background-color: var(--transBlack-bg-color);
+}
+
 h1 {
 	font-weight: 700;
 	font-size: var(--home-font-size);
     color: var(--home-color);
-}
-
-main {
-	padding: 1em;
+	background-color: var(--transBlack-bg-color);
 }
 
 .sponsors {
@@ -22,10 +27,12 @@ main {
 	padding-top: 1em;
 	justify-content: center;
 	flex-wrap: wrap;
+	background-color: var(--transBlack-bg-color);
 }
 
 h2 {
-	margin-top: 2em;
+	margin: 2em 0.5em 0 0.5em;
+	background-color: var(--transBlack-bg-color);
 }
 
 .reg-img {
@@ -43,32 +50,49 @@ h2 {
 	transform: scale(1.1);
 }
 
+/* form */
+
 form {
 	display: flex;
 	flex-direction: column;
-	margin: 1em;
-	input[type=text], [type=email]{
+	margin: 1em 0 1em 0;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: left;
+	background-color: var(--transBlack-bg-color);
+	border-radius: 1em;
+}
+
+.parag-form {
+	text-transform: uppercase;
+	margin: 1em 0.5em 0 0.5em;
+	text-align: center;
+}
+
+input[type=text], [type=email] {
 		background-color: white;
-		width: 30em;
+		font-weight: bold;
+		width: 25em;
 		padding: 1em;
 		border-radius: 1em;
 		text-align: center;
-		border: 0.3em solid lightblue;
 		margin: 1em;
-		transition: all 0.2s;
-	}
+		transition: all 0.5s;
+}
 
-	text-align: left;
-	input[type=number] {
+input[type=number] {
 		background-color: white;
+		font-weight: bold;
 		width: 5em;
 		padding: 1em;
 		border-radius: 1em;
 		text-align: center;
-		border: 0.3em solid lightblue;
 		margin: 1em;
-		transition: all 0.2s;
-	}
+		transition: all 0.5s;
+}
+
+input::placeholder {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 textarea {
@@ -77,9 +101,78 @@ textarea {
 		padding: 1em;
 		border-radius: 1em;
 		text-align: center;
-		border: 0.3em solid lightblue;
 		margin: 1em;
-		transition: all 0.2s;
+		transition: all 0.5s;
+}
+ 	
+input:invalid {
+	background-color: rgb(255, 212, 212);
+}
+
+input:invalid ~ button {
+	background-color: grey;
+}
+
+#email:invalid ~ .error-input_email {
+	visibility: visible;
+}
+
+.error-input_email {
+	display: block;
+	visibility: hidden;
+	margin: 0.1em 0 0.1em;
+	font-size: 1.5em;
+	color: rgb(255, 17, 65);
+	background-color: black;
+	border-radius: 1em;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+.radio__label, .label-check {
+	padding: 0.5em 1em;
+	font-weight: bold;
+	background-color: var(--header-bg-color);
+	color: black;
+	cursor: pointer;
+	transition: all 0.1s;
+	border-radius: 1em;
+}
+
+.label-check:hover, .radio__label:hover {
+	transform: scale(1.1);
+}
+
+.label-check, .radio__label {
+	border-right: 2px solid black;
+	margin: 0 0.5em 0 0.5em;
+	width:fit-content;
+}
+
+.radio__input, .input-check {
+	display: none;
+}
+
+.input-check:checked + .label-check,
+.radio__input:checked + .radio__label  {
+	background-color: #FFD700;
+}
+
+.container-checkbox, .container-radio {
+	display: flex;
+	height: 5em;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 1em;
+	justify-content: center;
+}
+
+.textarea-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 input[type=text]:hover, [type=email]:hover, input[type=number]:hover, textarea:hover {
@@ -87,12 +180,8 @@ input[type=text]:hover, [type=email]:hover, input[type=number]:hover, textarea:h
 }
 
 .allergies {
-	margin-top: 2em;
+	margin-top: 1em;
 }
-
-/* div > .parag-form {
-	
-} */
 
 .radio {
 	display: inline-flex;
@@ -101,45 +190,17 @@ input[type=text]:hover, [type=email]:hover, input[type=number]:hover, textarea:h
 	box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
 }
 
-.radio__input {
-	display: none;
-}
-
-.radio__label {
-	padding: 0.5em 1em;
+button {
+	padding: 1em 2em;
 	font-weight: bold;
-	background-color: #84a3ff;
+	background-color: var(--header-bg-color);
 	color: black;
 	cursor: pointer;
 	transition: all 0.1s;
-
+	border-radius: 1em;
+	transition: all 1s;
 }
 
-.radio__label:first-of-type {
-	border-radius: 1em 0 0 1em;
-}
-
-.radio__label:last-of-type {
-	border-radius: 0 1em 1em 0;
-}
-
-.radio__label:not(:last-of-type) {
-	border-right: 2px solid black;
-
-}
-
-.radio__input:checked + .radio__label {
-	background-color: #FFD700;
-}
-
-label {
-	text-transform: uppercase;
-}
-
-.container-radio {
-	display: flex;
-	height: 3em;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 1em;
+button:hover {
+	background-color: var(--golden-bg-color);
 }

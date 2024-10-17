@@ -2,8 +2,10 @@
 	--home-color: #FFD700;
 	--header-box-shadow: 0.1em 0.1em 0.1em 0.1em #112639;
 	--home-font-size: 250%;
-	--header-bg-color: #84a3ff;
+	--header-bg-color: #6281d1;
 	--headerHomeBgBoxShadow-box-shadow: inset 0 0em 0.6em 0.25em rgb(18, 17, 17);
 	--borderColorSeminar-border: 2px solid #112639;
 	--mainArticles-font-size: 150%;
+	--golden-bg-color: #FFD700;
+	--transBlack-bg-color: rgba(0, 0, 0, 0.323);
 }

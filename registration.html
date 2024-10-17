@@ -14,48 +14,54 @@
 </head>
 <body>
 	<header>
-		<a class="navigation" href="home.html"><img class="header-logo" src="images/HeaderLogo.jpg"></a>
-		<a class="navigation" href="home.html"><nav>HOME</nav></a>
+
+		<a class="navigation" href="index.html"><img class="header-logo" src="images/header-logo.jpg" alt="World inside a cog"></a>
+		<a class="navigation" href="index.html"><nav>HOME</nav></a>
 		<a class="navigation" href="program.html"><nav>PROGRAM</nav></a>
 		<a class="navigation" href="registration.html"><nav>REGISTRATION</nav></a>
+
 	</header>
 	<main>
-		<h1>Conference Registration</h1>
-		<form action="#">
-			
-		
-				<label for="name"> First Name </label>
-				<input id="name" type="text" value="" placeholder="Homer" required minlength="1" maxlength="20"/>
 
-				<label for="name"> Last Name </label>
-				<input id="name" type="text" value="" placeholder="Simpson" required minlength="1" maxlength="20"/>
+		<h1>CONFERENCE REGISTRATION</h1>
+		<form action="#">
+		
+				<label for="first_name"> First Name </label>
+				<input id="first_name" type="text" value="" placeholder="Homer" required minlength="1" maxlength="20">
+
+				<label for="last_name"> Last Name </label>
+				<input id="last_name" type="text" value="" placeholder="Simpson" required minlength="1" maxlength="20">
 		
 				<label for="age"> Your age </label>
-				<input id="age" type="number" value="" placeholder="35" required min="16" max="99"/>
+				<input id="age" type="number" value="" placeholder="35" required min="16" max="99">
 		
 				<label for="email"> Enter your email </label>
-				<input id="email" type="email" value="" placeholder="john.doe@gmail.com" required minlength="5" maxlength="99"/>
+				<input id="email" type="email" value="" placeholder="john.doe@gmail.com" required minlength="5" maxlength="99">
+				<span class="error-input_email"> Not a valid email address </span>
 			
 				<label for="address"> Type your address </label>
-				<input id="address" type="text" value="" placeholder="Webbgatan 7, Gotheburg" required minlength="5" maxlength="99"/>
+				<input id="address" type="text" value="" placeholder="Webbgatan 7, Gotheburg" required minlength="5" maxlength="99">
 			
 				<label for="occupation/education">Your occupation / education</label>
-				<input id="occupation/education" type="text" placeholder="NBI/Handelsakademin FED24GB" required minlength="2" max="99"></input>
+				<input id="occupation/education" type="text" placeholder="NBI/Handelsakademin FED24GB" required minlength="2" maxlength="99">
 
-			<p class="parag-form"> For how long do you plan to attend the Conference? </p>
+			<p class="parag-form"> Which days will you attend the conference? </p>
+
 			<div class="container-checkbox">
-	
-				<label for="friday"> Friday </label>
-				<input class="check" id="friday" type="checkbox" checked/>
-			
-				<label for="saturday"> Saturday </label>
-				<input class="check" id="saturday" type="checkbox"/>
-			
-				<label for="day" > Sunday </label>
-				<input class="check" id="sunday" type="checkbox"/>
+				
+				<input class="input-check" id="friday" type="checkbox">
+				<label class="label-check" for="friday"> Friday </label>
+				
+				<input class="input-check" id="saturday" type="checkbox">
+				<label class="label-check" for="saturday"> Saturday </label>
+
+				<input class="input-check" id="sunday" type="checkbox">
+				<label class="label-check" for="sunday"> Sunday </label>
+
 			</div>
 
 			<p class="parag-form"> Choose your meal type: </p>
+
 			<div class="container-radio">
 
 				<input class="radio__input" type="radio" value="meat" name="meal" id="meal-1">
@@ -71,49 +77,58 @@
 				<label class="radio__label" for="meal-4"> Vegan </label>
 
 			</div>
-				<label class="allergies" for="allergies">Let us know if you have any allergies</label>
+
+			<div class="textarea-container">
+
+				<label class="allergies" for="allergies"> Let us know if you have any allergies </label>
 				<textarea id="allergies"></textarea>
 		
-			<button type="submit"> Register now! </button>
+				<button type="submit"> REGISTER NOW! </button>
+			
+			</div>
+
 		</form>
 
-		<h2> Thanks to our generous sponsors we are glad to announce that there is no admission fee for Bättre Web Conference but the only requirement is that you either must study Frontend Development or be employed as a Frontend Developer in 2024.  </h2>
-		<section class="sponsors">
-			<a class="sponsors-links" href="https://www.google.com" target="_blank"> <img class="reg-img" src="images/google-logo.jpg"> </a>
-			<a class="sponsors-links" href="https://www.microsoft.com" target="_blank"> <img class="reg-img" src="images/microsoft-logo.jpeg"> </a>
-			<a class="sponsors-links" href="https://www.openai.com" target="_blank"> <img class="reg-img" src="images/openAi-logo.jpg"> </a>
-			<a class="sponsors-links" href="https://www.mozilla.org" target="_blank"> <img class="reg-img" src="images/Mozilla_logo.png"> </a>
-		</section>
+		<h2> Thanks to our generous sponsors we are glad to announce that there is no admission fee for Better Web Conference but the only requirement is that you either must study Frontend Development or be employed as a Frontend Developer in 2024.  </h2>
+
+		<div class="sponsors">
+
+			<a class="sponsors-links" href="https://www.google.com" target="_blank"> <img class="reg-img" src="images/google-logo.jpg" alt="Google logo"> </a>
+			<a class="sponsors-links" href="https://www.microsoft.com" target="_blank"> <img class="reg-img" src="images/microsoft-logo.jpeg" alt="Microsoft logo"> </a>
+			<a class="sponsors-links" href="https://www.openai.com" target="_blank"> <img class="reg-img" src="images/openai-logo.jpg" alt="Open AI logo"> </a>
+			<a class="sponsors-links" href="https://www.mozilla.org" target="_blank"> <img class="reg-img" src="images/mozilla-logo.png" alt="Mozilla logo"> </a>
+
+		</div>
 
 	</main>
 	<footer>
 		
 		<div class="footer-container">
 
-			<section class="footer-info">
+			<div class="footer-info">
 				<p><a class="footer-links" href="tel://+46701010101" target="_blank"> Phone: +46701010101 </a></p>
 				<a class="footer-links" href="mailto:tim.berners-lee@handelsakademin.se" target="_blank">
 					<p> Email: </p>
 					<p> tim.berners-lee@handelsakademin.se </p>
 				</a>
-			</section>
+			</div>
+		
+			<div class="logos-container">
+					<a class="footer-links" href="https://x.com/" target="_blank"><img class="footer-logos" src="images/x-logo.jpg" alt="X.com logo"></a>
+					<a class="footer-links" href="https://www.instagram.com/" target="_blank"><img class="footer-logos" src="images/inst-logo.png" alt="instagram logo"></a>
+					<a class="footer-links" href="https://www.linkedin.com" target="_blank"><img  class="footer-logos" src="images/linkedin-logo.png" alt="Linkedin logo"></a>
+			</div>
 
-			<section class="logos-container">
-					<a class="footer-links" href="https://x.com/" target="_blank"><img class="footer-logos" src="images/x-logo.jpg"></a>
-					<a class="footer-links" href="https://www.instagram.com/" target="_blank"><img class="footer-logos" src="images/inst-logo.png"></a>
-					<a class="footer-links" href="https://www.linkedin.com" target="_blank"><img  class="footer-logos" src="images/LinkedinLOGO.png"></a>
-			</section>
-
-			<section class="footer-info">
+			<div class="footer-info">
 				<p> <a class="footer-links" href="https://www.google.com/search?q=m%C3%A4ssans+gata+24+g%C3%B6teborg&rlz=1C1CHBD_svSE1052SE1052&oq=m%C3%A4ssans+gata+24&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyCQgAEEUYORiABDIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB7SAQg2NzI1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" target="_blank"> Event address: Mässans gata 24 </a></p>
 				<p> 41251 Gothenburg </p>
 				<p> Conference hall: Gothia Towers </p>	
-			</section>
+			</div>
 		</div>
 
-		<section class="footer-nbi">
-			<p> Bättre Webb conference 2024 in Gothenburg is organized by NBI/Handelsakademin </p>
-		</section>
+		<div class="footer-nbi">
+			<p> Better Web Conference 2024 in Gothenburg is organized by NBI/Handelsakademin </p>
+		</div>
 
 	</footer>
 </body>

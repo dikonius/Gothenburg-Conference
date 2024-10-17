@@ -7,10 +7,10 @@ body {
 
 .home-container {
 	display: flex;
-	background-image: url(./images/Home.jpg);
+	background-image: url(/images/home.jpg);
 	background-size: cover;
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
 	background-repeat: no-repeat;
 	justify-content: center;
 	flex-wrap: wrap;

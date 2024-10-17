@@ -52,8 +52,6 @@ footer {
 .footer-logos:hover {
 	box-shadow: 0 0 0.25em 0.25em var(--header-bg-color);
 	transform: scale(1.5);
-	margin: 0.5;
-
 }
 
 .footer-links:hover {
