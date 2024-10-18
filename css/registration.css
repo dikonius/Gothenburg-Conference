@@ -109,10 +109,6 @@ input:invalid {
 	background-color: rgb(255, 212, 212);
 }
 
-/* input:invalid ~ button:disabled {
-	background-color: grey;
-} */
-
 #email:invalid ~ .error-input_email,
 #age:invalid ~ .error-input_age {
 	visibility: visible;
