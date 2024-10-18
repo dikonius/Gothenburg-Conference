@@ -55,7 +55,6 @@ h2 {
 form {
 	display: flex;
 	flex-direction: column;
-	margin: 3em;
 	flex-wrap: wrap;
 	text-align: center;
 	background-color: var(--transBlack-bg-color);

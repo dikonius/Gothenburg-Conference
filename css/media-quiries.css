@@ -35,6 +35,10 @@
 /* form */
 
 @media (min-width: 570px) {
+
+	form {
+		margin: 3em;
+	}
 	
 	.parag-form {
 		text-align: left;
