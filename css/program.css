@@ -1,0 +1,48 @@
+* {box-sizing: border-box; padding: 0; margin: 0;
+}
+
+.day {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.seminar {
+	display: flex;
+	flex-direction: column;
+	width: 324px;
+	align-items: center;
+	border: var(--borderColorSeminar-border);
+	margin: 1em;
+	border-radius: 1em;
+	text-align: center;
+	box-shadow: 0 0 0.6em 0.4em #84a3ff;
+	background-color: white;
+	padding: 0 0.2em 0.2em 0.2em;
+	font-size: var(--mainArticles-font-size);
+
+}
+
+.seminar-img {
+	height: 320px;
+	width: 320px;
+	border-radius: 1em;
+}
+
+ main {
+	background-color: rgb(18, 17, 17);
+	padding-top: 1em;
+ }
+
+ h2 {
+	color: var(--home-color);
+	text-align: center;
+	font-size: var(--home-font-size);
+	
+ }
+
+ h1 {
+	color: white;
+	text-align: center;
+	font-size: var(--home-font-size);
+ }

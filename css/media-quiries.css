@@ -1,0 +1,71 @@
+
+/* footer */
+
+@media (min-width: 631px) {
+	footer {
+		display: flex;
+		height: 8.5em;
+		flex-direction: column;
+	}
+
+	.logos-container {
+		flex-direction: row;
+	}
+}
+
+/* header */
+
+@media (min-width: 644px) {
+	header {
+		flex-direction: row;
+		height: 5em;
+		justify-content: space-around;
+	}
+	
+	nav {
+		width: 9em;
+		justify-content: center;
+	}
+
+	.home, .home-dates {
+		font-size: 300%;
+	}
+}
+
+/* form */
+
+@media (min-width: 570px) {
+	
+	.parag-form {
+		text-align: left;
+	}
+	
+	
+	input[type=number] {
+		margin: 1em 1em 1em 2em;
+	}
+	
+	.label_edu, .label_address, .label_email {
+		width: 5em;
+		flex-wrap: wrap;
+	}
+	
+	.field_edu, .field_address, .field_email, .field_age, .field_name, .field_last_name {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.field_age, .field_email {
+		align-items: center;
+	}
+	
+	.container-checkbox, .container-radio {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.textarea-container {
+		align-items: start;
+	}
+	
+}

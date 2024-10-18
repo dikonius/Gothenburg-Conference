@@ -1,0 +1,214 @@
+* {box-sizing: border-box; padding: 0; margin: 0;}
+
+body {
+	background-image: url(../images/gothia_night.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-color: black;
+	color: white;
+	height: 100vh;
+}
+
+main {
+	margin-top: 2em;
+	background-color: var(--transBlack-bg-color);
+}
+
+h1 {
+	font-weight: 700;
+	font-size: var(--home-font-size);
+    color: var(--home-color);
+	background-color: var(--transBlack-bg-color);
+}
+
+.sponsors {
+	display: flex;
+	padding-top: 1em;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: var(--transBlack-bg-color);
+}
+
+h2 {
+	margin: 2em 0.5em 0 0.5em;
+	background-color: var(--transBlack-bg-color);
+}
+
+.reg-img {
+	height: 10em;
+	width: 20em;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 1em;
+	transition: all 1s;
+	
+}
+
+.reg-img:hover {
+	box-shadow: 0 0 0.6em 0.4em #84a3ff;
+	transform: scale(1.1);
+}
+
+/* form */
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 3em;
+	flex-wrap: wrap;
+	text-align: center;
+	background-color: var(--transBlack-bg-color);
+	border-radius: 1em;
+}
+
+.parag-form {
+	text-transform: uppercase;
+	margin: 2em 0 2em 0;
+	text-align: center;
+}
+
+input[type=text], [type=email] {
+	background-color: white;
+	font-weight: bold;
+	width: 25em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	margin: 1em;
+	transition: all 0.5s;
+}
+
+input[type=number] {
+	background-color: white;
+	font-weight: bold;
+	width: 5em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	margin: 1em 0 1em 0;
+	transition: all 0.5s;
+}
+
+.label_edu, .label_address, .label_email {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-right: 1em;
+	align-items: center;
+	text-align: center;
+}
+
+.field_edu, .field_address, .field_email, .field_name, .field_last_name, .field_age {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input::placeholder {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+textarea {
+	background-color: white;
+	width: 25em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	margin: 1em 0 1em 0;
+	transition: all 0.5s;
+}
+ 	
+input:invalid {
+	background-color: rgb(255, 212, 212);
+}
+
+#email:invalid ~ .error-input_email,
+#age:invalid ~ .error-input_age {
+	visibility: visible;
+}
+
+.error-input_email, .error-input_age {
+	visibility: hidden;
+	margin: 0.1em 0 0.1em;
+	font-size: 1.5em;
+	color: rgb(255, 17, 65);
+	background-color: black;
+	border-radius: 1em;
+	padding: 0.15em;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+.radio__label, .label-check {
+	padding: 0.5em 1em;
+	font-weight: bold;
+	background-color: var(--header-bg-color);
+	color: black;
+	cursor: pointer;
+	transition: all 0.5s;
+	border-radius: 1em;
+	border-right: 2px solid black;
+	margin: 0.2em 0.5em 0.2em 0.5em;
+	width:fit-content;
+}
+
+.label-check:hover, .radio__label:hover {
+	transform: scale(1.1);
+}
+
+.radio__input, .input-check {
+	display: none;
+}
+
+.input-check:checked + .label-check,
+.radio__input:checked + .radio__label  {
+	background-color: #FFD700;
+}
+
+.container-checkbox, .container-radio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.textarea-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1em;
+}
+
+input[type=text]:hover, [type=email]:hover, input[type=number]:hover, textarea:hover {
+	box-shadow: 0 0 0.6em 0.4em #84a3ff;
+}
+
+.allergies {
+	margin-top: 1em;
+}
+
+.radio {
+	display: inline-flex;
+	overflow: hidden;
+	border-radius: 1em;
+	box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+}
+
+button {
+	padding: 1em 2em;
+	font-weight: bold;
+	background-color: var(--header-bg-color);
+	color: black;
+	cursor: pointer;
+	transition: all 0.1s;
+	border-radius: 1em;
+	transition: all 1s;
+	margin-top: 1em;
+	font-family: 'Times New Roman';
+	font-size: 1.1em;
+}
+
+button:hover {
+	background-color: var(--golden-bg-color);
+}
