@@ -25,26 +25,38 @@
 
 		<h1>CONFERENCE REGISTRATION</h1>
 		<form action="#">
-		
+
+			<div class="field_name">
 				<label for="first_name"> First Name </label>
 				<input id="first_name" type="text" value="" placeholder="Homer" required minlength="1" maxlength="20">
+			</div>
 
+			<div class="field_last_name">
 				<label for="last_name"> Last Name </label>
 				<input id="last_name" type="text" value="" placeholder="Simpson" required minlength="1" maxlength="20">
-		
+			</div>
+				
+			<div class="field_age">
 				<label for="age"> Your age </label>
 				<input id="age" type="number" value="" placeholder="35" required min="18" max="99">
 				<span class="error-input_age"> You must be 18 or older </span>
-		
-				<label for="email"> Enter your email </label>
+			</div>
+				
+			<div class="field_email">
+				<label class="label_email" for="email"> Your email </label>
 				<input id="email" type="email" value="" placeholder="john.doe@gmail.com" required minlength="5" maxlength="99">
 				<span class="error-input_email"> Not a valid email </span>
-			
-				<label for="address"> Type your address </label>
+			</div>
+				
+			<div class="field_address">
+				<label class="label_address" for="address"> Your address </label>
 				<input id="address" type="text" value="" placeholder="Webbgatan 7, Gotheburg" required minlength="5" maxlength="99">
-			
-				<label for="occupation/education">Your occupation / education</label>
-				<input id="occupation/education" type="text" placeholder="NBI/Handelsakademin FED24GB" required minlength="2" maxlength="99">
+			</div>
+				
+			<div class="field_edu">
+					<label class="label_edu" for="occupation/education">Your occupation / education</label>
+					<input id="occupation/education" type="text" placeholder="NBI/Handelsakademin FED24GB" required minlength="2" maxlength="99">
+			</div>
 
 			<p class="parag-form"> Which days will you attend the conference? </p>
 
@@ -52,7 +64,7 @@
 				
 				<input class="input-check" id="friday" type="checkbox">
 				<label class="label-check" for="friday"> Friday </label>
-				
+					
 				<input class="input-check" id="saturday" type="checkbox">
 				<label class="label-check" for="saturday"> Saturday </label>
 

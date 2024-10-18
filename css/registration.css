@@ -55,40 +55,53 @@ h2 {
 form {
 	display: flex;
 	flex-direction: column;
-	margin: 1em 0 1em 0;
+	margin: 3em;
 	flex-wrap: wrap;
-	align-items: center;
-	text-align: left;
+	text-align: center;
 	background-color: var(--transBlack-bg-color);
 	border-radius: 1em;
 }
 
 .parag-form {
 	text-transform: uppercase;
-	margin: 1em 0.5em 1em 0.5em;
+	margin: 2em 0 2em 0;
 	text-align: center;
 }
 
 input[type=text], [type=email] {
-		background-color: white;
-		font-weight: bold;
-		width: 25em;
-		padding: 1em;
-		border-radius: 1em;
-		text-align: center;
-		margin: 1em;
-		transition: all 0.5s;
+	background-color: white;
+	font-weight: bold;
+	width: 25em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	margin: 1em;
+	transition: all 0.5s;
 }
 
 input[type=number] {
-		background-color: white;
-		font-weight: bold;
-		width: 5em;
-		padding: 1em;
-		border-radius: 1em;
-		text-align: center;
-		margin: 1em;
-		transition: all 0.5s;
+	background-color: white;
+	font-weight: bold;
+	width: 5em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	margin: 1em 0 1em 0;
+	transition: all 0.5s;
+}
+
+.label_edu, .label_address, .label_email {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-right: 1em;
+	align-items: center;
+	text-align: center;
+}
+
+.field_edu, .field_address, .field_email, .field_name, .field_last_name, .field_age {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 input::placeholder {
@@ -97,12 +110,12 @@ input::placeholder {
 
 textarea {
 	background-color: white;
-		width: 25em;
-		padding: 1em;
-		border-radius: 1em;
-		text-align: center;
-		margin: 1em;
-		transition: all 0.5s;
+	width: 25em;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+	margin: 1em 0 1em 0;
+	transition: all 0.5s;
 }
  	
 input:invalid {
@@ -115,7 +128,6 @@ input:invalid {
 }
 
 .error-input_email, .error-input_age {
-	display: block;
 	visibility: hidden;
 	margin: 0.1em 0 0.1em;
 	font-size: 1.5em;
@@ -159,13 +171,13 @@ label {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
 
 .textarea-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 1em;
 }
 
 input[type=text]:hover, [type=email]:hover, input[type=number]:hover, textarea:hover {
@@ -192,6 +204,9 @@ button {
 	transition: all 0.1s;
 	border-radius: 1em;
 	transition: all 1s;
+	margin-top: 1em;
+	font-family: 'Times New Roman';
+	font-size: 1.1em;
 }
 
 button:hover {
